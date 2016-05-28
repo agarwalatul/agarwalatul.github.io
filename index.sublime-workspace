@@ -1,0 +1,309 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"Demo"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Build With: C++ Single File - Run"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/AgARwal Atul/Downloads/Sublime Text Build 3113/License.txt",
+		"/C/Users/AgARwal Atul/Desktop/temp prgm/sample.java",
+		"/C/Users/AgARwal Atul/eclipse.txt",
+		"/C/Users/AgARwal Atul/Desktop/temp prgm/sample.xml",
+		"/D/Documents/SampleUnmesh/src/sampleunmesh/SampleUnmesh.java",
+		"/D/Documents/Sample/src/sample/Sample.java",
+		"/C/Users/AgARwal Atul/git/sampledeploy/src/main/java/Handler/Mailer.java",
+		"/C/Users/AgARwal Atul/git/sampledeploy/src/main/java/sampledeploy/MySqlHandler.java",
+		"/C/Users/AgARwal Atul/git/sampledeploy/src/main/java/Handler/SignUp.java",
+		"/D/GATE/Post GATE/IIITB/Post admsn/PaymentOptions-2016.txt",
+		"/D/JS/Electron/electron-quick-start/run.txt",
+		"/D/git/FirstGit/GUI.txt",
+		"/D/JS/Electron/electron-quick-start/README.md",
+		"/D/JS/YouTube/first.js",
+		"/D/JS/Electron/electron-quick-start/package.json",
+		"/D/JS/Electron/electron-quick-start/main.js",
+		"/D/JS/Electron/Sample.js",
+		"/C/Users/AgARwal Atul/AppData/Local/Temp/Rar$DIa0.115/send_text.java",
+		"/C/Users/AgARwal Atul/AppData/Local/Temp/Rar$DIa0.856/carrier_list.java",
+		"/C/Users/AgARwal Atul/Desktop/SMS/SerialConnectionException.java",
+		"/C/Users/AgARwal Atul/Desktop/SMS/SerialParameters.java",
+		"/C/Users/AgARwal Atul/Desktop/SMS/SerialConnection.java",
+		"/C/Users/AgARwal Atul/Desktop/SMS/Sender.java",
+		"/C/Users/AgARwal Atul/Desktop/SMS/SMSClient.java",
+		"/D/git/FirstGit/Sample.txt",
+		"/D/git/FirstGit/Second.txt",
+		"/C/Users/AgARwal Atul/Downloads/google_product_feed_example.xml",
+		"/C/Users/AgARwal Atul/git/sampledeploy/src/main/webapp/index.html",
+		"/C/Users/AgARwal Atul/Desktop/temp prgm/pject/Servlets/server/Server.java",
+		"/C/Users/AgARwal Atul/Desktop/temp prgm/pject/Servlets/server/SendEmail.java",
+		"/C/Users/AgARwal Atul/Desktop/temp prgm/pject/Servlets/Mail/ClientForCommunication.java",
+		"/C/Users/AgARwal Atul/Desktop/pject/mailsample/src/main/java/Runner.java",
+		"/C/Users/AgARwal Atul/Desktop/pject/mailsample/pom.xml",
+		"/C/Users/AgARwal Atul/Desktop/pject/mailsample/.openshift/config/standalone.xml",
+		"/D/JS/youtube-dl/setup.py",
+		"/D/JS/first.js",
+		"/C/Users/AgARwal Atul/Desktop/downloadyoutubevideos.user.js",
+		"/C/Users/AgARwal Atul/Desktop/GIF/desc.txt",
+		"/D/rhino1.7.7.1/lib/Sample.js",
+		"/C/Users/AgARwal Atul/Downloads/FileSystem.java",
+		"/C/Users/AgARwal Atul/cminstaller/log.txt",
+		"/C/Users/AgARwal Atul/Desktop/rhino1.7.7.1/src/build.xml",
+		"/C/Users/AgARwal Atul/file_running.txt",
+		"/D/Eclipse Project/SimpleWebServer/src/Sample.java",
+		"/C/Users/AgARwal Atul/Desktop/Mail/ClientForCommunication.java",
+		"/D/ClientForCommunication/src/clientMethods/ClientForCommunication.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/Mailer.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/SendMail.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/OTPForReset.java",
+		"/C/Users/AgARwal Atul/Desktop/server/UC final/ClientForCommunication (1).java",
+		"/C/Users/AgARwal Atul/Desktop/server/UC final/Server.java",
+		"/C/Users/AgARwal Atul/Desktop/server/UC final/ClientForCommunication (1) - Copy.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/StoreOneDrive.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/StoreGoogleDrive.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/StoreDropBox.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/PasswordReset.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/GetUserInfo.java",
+		"/C/Users/AgARwal Atul/Desktop/pject/sampledeploy/src/main/java/Handler/EditInfo.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/ResetPassword.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/EditInfo.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/CheckUsername.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/Login.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/SignUp.java",
+		"/C/Users/AgARwal Atul/Desktop/Servlets/Account_info.java",
+		"/C/Users/AgARwal Atul/Desktop/server/SendEmail.java",
+		"/D/Test/src/tmpSamples/Login.java",
+		"/C/Users/AgARwal Atul/Desktop/sample.txt",
+		"/C/Users/AgARwal Atul/Desktop/SampleDeploy.txt",
+		"/C/Users/AgARwal Atul/Desktop/server/JDBCExample1.java",
+		"/C/Users/AgARwal Atul/Desktop/pject/sampledeploy/src/main/java/Runner.java",
+		"/C/Users/AgARwal Atul/Desktop/server/UserInfo.java",
+		"/C/Users/AgARwal Atul/Desktop/server/Account_info.java",
+		"/C/Users/AgARwal Atul/Desktop/DBHandler.txt",
+		"/C/Users/AgARwal Atul/Desktop/Server.java",
+		"/C/Users/AgARwal Atul/Desktop/FileSystem.java",
+		"/C/Users/AgARwal Atul/AppData/Local/Microsoft/Windows/INetCache/IE/ZSGGAANK/hungama_15[1].txt",
+		"/C/Users/AgARwal Atul/Desktop/server/ClientForCommunication.java",
+		"/C/Users/AgARwal Atul/Desktop/~Get Your Files Here - www.appwikia.com/Important ! Readme.txt",
+		"/C/Users/AgARwal Atul/Desktop/ClientForCommunication.java",
+		"/C/Users/AgARwal Atul/Downloads/ClientForCommunication.java",
+		"/C/Users/AgARwal Atul/Desktop/Java-SMS-Application-HTTP/src/Java_sms_httprequest.java",
+		"/C/Users/AgARwal Atul/Downloads/YTD Video Downloader PRO v4.9 (2-click run)/README.txt",
+		"/C/Android/sdk1/system-images/android-23/google_apis/x86/NOTICE.txt",
+		"/C/Users/AgARwal Atul/Desktop/pkg/sample.java",
+		"/D/GATE/Post GATE/IIITB/ID IIITB.txt",
+		"/C/Users/AgARwal Atul/AppData/Local/Temp/Rar$DIa0.795/Important ! Readme.txt",
+		"/C/Users/AgARwal Atul/Downloads/YouTube Downloader (YTD) Pro 5.1.1.0.1 Final [S0ft4PC]/iNstRuCtioN.txt",
+		"/C/Users/AgARwal Atul/Downloads/YouTube Downloader Pro YTD 4.8.3 Final Incl Crack - SceneDL/Install Notes.txt",
+		"/C/Users/AgARwal Atul/Desktop/YouTube Video Downloader Pro 5.3.0.1 + Patch [4realtorrentz]/Info.txt",
+		"/C/Users/AgARwal Atul/Desktop/Hotspot Shield VPN Elite 5.20.20 Multilingual + Crack [SadeemPC]/Hotspot Shield VPN Elite 5.20.20 Multilingual + Crack [SadeemPC]/Instructions !!!.txt",
+		"/C/Users/AgARwal Atul/Downloads/YouTube Downloader (YTD) Pro 5.1.0.1 + Crack [KaranPC]/iNsTrucTioN.txt",
+		"/C/Users/AgARwal Atul/Desktop/temp prgm/client_id.json",
+		"/D/Eclipse Project/quick/src/quick/quick.java",
+		"/C/Users/AgARwal Atul/Desktop/eightqueen.py",
+		"/D/SEM 8/praccs/Eight.py",
+		"/G/Movies/Dev D 2009 Hindi 720p BRRip CharmeLeon Silver RG/CharmeLeon on FaceBook.txt",
+		"/C/Users/AgARwal Atul/Desktop/Booths/BoothsAlgorithm.java",
+		"/C/Users/AgARwal Atul/Desktop/OddEven1/src/OddEven1.java",
+		"/C/Users/AgARwal Atul/Desktop/sample.cpp",
+		"/C/Users/AgARwal Atul/Desktop/Xam/queen.py",
+		"/C/Users/AgARwal Atul/Desktop/input.xml",
+		"/C/Users/AgARwal Atul/Desktop/Data.xml",
+		"/C/Users/AgARwal Atul/Desktop/Quick.java",
+		"/C/Users/AgARwal Atul/Desktop/OddEven.java",
+		"/C/Users/AgARwal Atul/Desktop/Final CL3/QuickSort/Quick.java",
+		"/C/Users/AgARwal Atul/Desktop/Final CL3/QuickSort/Data.xml",
+		"/C/Users/AgARwal Atul/Desktop/Final CL3/QuickSort/input.xml",
+		"/H/CL3 DONE/SDMT/SDMT CODES/A4/Dining.java",
+		"/C/Users/AgARwal Atul/Desktop/sample.java",
+		"/D/SEM 8/praccs/MC/MusicPlayerCollege/app/src/main/java/com/example/altaf/musicplayercollege/MainActivity.java",
+		"/D/SEM 8/praccs/MC/BluetoothDemo/app/src/main/java/com/bluetooth/demo/MainActivity.java",
+		"/D/SEM 8/CL3 DONE/SDMT/SDMT CODES/B3/MainActivity.java",
+		"/D/SEM 8/praccs/MC/MusicPlayerCollege/app/src/main/java/com/example/altaf/musicplayercollege/getMp3.java",
+		"/D/SEM 8/praccs/MC/MusicPlayerCollege/app/src/main/AndroidManifest.xml",
+		"/D/SEM 8/praccs/MC/ImageViewer/app/src/main/java/com/example/altaf/imageviewer/MainActivity.java",
+		"/H/Atul QuickSort/SampleCL3/src/Quick.java",
+		"/C/Users/AgARwal Atul/Desktop/8 Queen/8 Queen/aa.py",
+		"/C/Users/AgARwal Atul/Desktop/OneDrive.json",
+		"/C/Users/AgARwal Atul/Desktop/B2 ODD EVEN SORT/src/com/ankush/OddEven.java",
+		"/C/Users/AgARwal Atul/Desktop/23 1 16/23 1 16/MusicPlayer/app/src/main/java/com/musicplayer/AudioPlayerDemoActivity.java",
+		"/C/Users/AgARwal Atul/Desktop/mc/music/Music.txt",
+		"/D/SEM 8/CL3/EightQueens/Sample.py",
+		"/D/SEM 8/CL3/EightQueens/input.json",
+		"/D/Xampp/tomcat/conf/tomcat-users.xml",
+		"/C/Users/AgARwal Atul/Desktop/beprojectggua-Google Drive.txt",
+		"/C/Users/AgARwal Atul/Desktop/Booth/src/java/BoothsAlgorithm.java",
+		"/C/Users/AgARwal Atul/Desktop/Dropbox.json",
+		"/C/Users/AgARwal Atul/Desktop/GC  GD .json"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n			",
+			"getAcessToken",
+			"store",
+			"send",
+			"rand",
+			"mybluetoothR",
+			"sample",
+			"ref",
+			"app key"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
