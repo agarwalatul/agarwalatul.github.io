@@ -1,28 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Bootstrap Example</title>
+ <title>AgARwal</title>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Delius+Swash+Caps" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+	<script src="https://use.fontawesome.com/254e6bd0d1.js"></script>
 	<style>
 		.crop {
-		width: 20em;
-		height: 20em;
+		width: 15em;
+		height: 15em;
 		object-fit: cover;
 		}
-	</style>
-</head>
-<body>
-	<img src="profile.jpg" class="img-circle crop img-responsive" alt="profile image" style="margin-top: 3em;margin:auto;display:block;" id="profile">
-	<h1><center>wassup</center></h1>
-</body>
+		div,h1,h2{
+			color:white;
+		}
+		h2{
+			display:inline;
+		}
 
-<script>
-	/*$(window).on('load',function(){
-		$('#profile').css({height:$(this).height()/2,height:$(this).width()/2});
-	});*.
-</script>
+		#element::-webkit-scrollbar { 
+	    	display: none; 
+		}
+
+		a{
+			color: #ffffff;
+			text-decoration: none!important;
+		}
+	</style>
+
+</head>
+<body style="background-color: #317873;">
+	<img src="profile.jpg" class="img-circle crop img-responsive" alt="profile image" style="margin-top: 3em;margin:auto;display:block;" id="profile">
+	<h1 style="color: #ffffff; font-family: 'Cookie', cursive; "><center>AgARwal</center></h1>
+		<div class="row col-sm-12" style="margin-top: 1em">
+			<div class="col-sm-12">
+				<div class="col-sm-2">
+							<div style="margin-bottom: 1em;">
+								<i class="fa fa-hashtag" aria-hidden="true"></i><h2 style="font-family: 'Cookie', cursive;">AboutMe</h2><br>
+									<a href="aboutme.html" style="margin-left: 1em; font-family: 'Delius Swash Caps',cursive;"><i class="fa fa-info" aria-hidden="true"></i> follow this </a>
+							</div>
+						<i class="fa fa-address-card" aria-hidden="true"></i><h2 style="font-family: 'Cookie', cursive;"> Contact</h2><br>
+							<div style="margin-left:1em;margin-bottom: 1em">
+								<a href="mailto:dev.agarwalatul@gmail.com" style="font-family: 'Delius Swash Caps', cursive; color: #ffffff;"><i class="fa fa-envelope" aria-hidden="true"></i></a><br>
+								<a href="https://www.linkedin.com/in/agarwalat/" style="font-family: 'Delius Swash Caps', cursive; color: #ffffff;"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								<br>
+								<a href="https://www.quora.com/profile/AgARwal-Atul" style="font-family: 'Delius Swash Caps', cursive; color: #ffffff;"><i class="fa fa-quora" aria-hidden="true"></i></a><br>
+								<a href="https://www.facebook.com/profile.php?id=100013674109443" style="font-family: 'Delius Swash Caps', cursive; color: #ffffff;"><i class="fa fa-facebook" aria-hidden="true"></i></a><br>
+								<a href="https://goo.gl/forms/kPHRIeYuP1HQDaHg2" style="color: #ffffff"><i class="fa fa-user" aria-hidden="true"></i></a>
+							</div>
+
+				</div>
+				<div class="col-sm-8">
+						<h2 style="font-family: 'Cookie', cursive; text-align: left;">Intro</h2>
+
+				</div>
+				<div class="col-sm-2">
+						<h2 style=" font-family: 'Cookie', cursive;">My views...</h2><br>	
+							<sup style="font-family: 'Delius Swash Caps',cursive;">*(Posts/Projects/Publications)</sup>
+							<div style="max-height:10em;height:10em;overflow-y:scroll;" id="element">
+								<ul>
+									<li><a href="sample.html">Sample post</a></li>
+								</ul>
+							</div>
+				</div>
+			</div>
+		</div>
+</body>
 </html>
