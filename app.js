@@ -96,11 +96,11 @@ const profileData = {
         },
         {
             category: "Databases",
-            items: ["PostgreSQL", "ClickHouse"]
+            items: ["PostgreSQL", "ClickHouse", "Redis", "CockroachDB", "MongoDB"]
         },
         {
             category: "Data Systems",
-            items: ["PyArrow", "Arrow Flight"]
+            items: ["PyArrow", "Pandas", "NumPy", "PySpark"]
         },
         {
             category: "Backend / RPC",
@@ -137,10 +137,41 @@ const profileData = {
             degree: "Master of Technology in Computer Science",
             institution: "International Institute of Information Technology, Bangalore",
             date: "2016 - 2018",
-            details: "GPA: 3.62/4.0 • Thesis: Very Deep CNN for Acoustic Modelling from Raw Speech Waveform"
+            details: "GPA: 3.62/4.0 • Thesis: Very Deep CNN for Acoustic Modelling from Raw Speech Waveform",
+            thesisLink: "https://github.com/agarwalatul/thesis"
         }
     ]
 };
+
+// Helper to parse "Month Year" string to Date object
+function parseDate(dateStr) {
+    if (!dateStr || dateStr.toLowerCase() === 'present') return new Date();
+    const [month, year] = dateStr.split(' ');
+    const monthIndex = new Date(Date.parse(month + " 1, 2000")).getMonth();
+    return new Date(parseInt(year), monthIndex);
+}
+
+// Function to calculate total years of experience
+function calculateTotalExperience(experience) {
+    if (!experience || experience.length === 0) return 0;
+
+    // Find the earliest start date across all roles
+    let earliestStart = new Date();
+
+    experience.forEach(exp => {
+        const dates = exp.date.split(' - ');
+        const startDate = parseDate(dates[0]);
+        if (startDate < earliestStart) {
+            earliestStart = startDate;
+        }
+    });
+
+    const now = new Date();
+    const diffTime = Math.abs(now - earliestStart);
+    const diffYears = diffTime / (1000 * 60 * 60 * 24 * 365.25);
+
+    return diffYears.toFixed(1); // Return with 1 decimal place (e.g., "7.5")
+}
 
 // Function to populate the page with data
 // This function can be easily modified to fetch data from a Rust backend API
@@ -152,6 +183,23 @@ async function loadProfileData() {
 
         // For now, use static data
         const data = profileData;
+
+        // Calculate dynamic experience years
+        const yearsOfExperience = calculateTotalExperience(data.experience);
+        const experienceString = `${yearsOfExperience}+ years`;
+
+        // Update Summary with dynamic experience
+        // We replace the placeholder hardcoded value if it matches, or inject it
+        // Since the current summary has "7.5+ years", we will do a regex replacement to be safe
+        data.summary = data.summary.replace(/\d+(\.\d+)?\+? years/i, experienceString);
+
+        // Update Meta Description
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            let currentContent = metaDescription.getAttribute('content');
+            currentContent = currentContent.replace(/\d+(\.\d+)?\+? years/i, experienceString);
+            metaDescription.setAttribute('content', currentContent);
+        }
 
         // Populate header
         document.getElementById('name').textContent = data.name;
@@ -233,9 +281,11 @@ async function loadProfileData() {
                 </div>
                 <div class="item-description">
                     <p>${edu.details}</p>
+                    ${edu.thesisLink ? `<p><a href="${edu.thesisLink}" target="_blank" class="thesis-link">View Thesis</a></p>` : ''}
                 </div>
             </div>
         `).join('');
+
 
     } catch (error) {
         console.error('Error loading profile data:', error);

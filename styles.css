@@ -571,8 +571,31 @@ body::before {
   border-bottom-color: var(--accent-pink);
 }
 
+.thesis-link {
+  color: var(--accent-purple);
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  transition: all var(--transition-fast);
+}
+
+.thesis-link::before {
+  content: '📄';
+  font-size: 1.1em;
+}
+
+.thesis-link:hover {
+  color: var(--accent-pink);
+  transform: translateX(4px);
+}
+
 @media print {
-  .theme-toggle, .footer {
+
+  .theme-toggle,
+  .footer {
     display: none;
   }
 }
