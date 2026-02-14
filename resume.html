@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atul Agarwal - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        /* Dummy theme toggle/icon for resume page — kept hidden always */
+        #themeToggle {
+            display: none !important;
+            position: absolute;
+            right: 0.3in;
+            top: 0.3in;
+            cursor: pointer;
+            gap: 6px;
+            align-items: center;
+        }
+        #themeToggle svg { width: 18px; height: 18px; display: block; }
+
+        @page {
+            size: A4;
+            margin: 0.3in;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 8.7pt;
+            line-height: 1.22;
+            color: #1a1a1a;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.3in;
+            background: #fff;
+        }
+
+        h1 {
+            font-size: 22pt;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 3px;
+            color: #0a0a0a;
+            text-transform: uppercase;
+        }
+
+        .title {
+            font-size: 10pt;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #2c3e50;
+            letter-spacing: 0.3px;
+        }
+
+        .contact {
+            font-size: 9pt;
+            margin-bottom: 7px;
+            color: #444;
+            line-height: 1.4;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .section {
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-size: 11.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #2563eb;
+            margin-bottom: 7px;
+            padding-bottom: 3px;
+            color: #1a1a1a;
+        }
+
+        .summary {
+            text-align: justify;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .core-stack {
+            background: #f8fafc;
+            border-left: 3px solid #2563eb;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            font-size: 9pt;
+            line-height: 1.5;
+        }
+
+        .core-stack-label {
+            font-weight: 700;
+            color: #2563eb;
+            text-transform: uppercase;
+            font-size: 9pt;
+            margin-bottom: 4px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 5px 10px;
+            margin-bottom: 10px;
+        }
+
+        .skill-label {
+            font-weight: 600;
+            color: #2c3e50;
+            white-space: nowrap;
+        }
+
+        .skill-value {
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        .job {
+            margin-bottom: 6px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 9.8pt;
+            color: #1a1a1a;
+        }
+
+        .company {
+            font-weight: 600;
+            color: #2563eb;
+        }
+
+        .company a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .location {
+            color: #555;
+            font-weight: 400;
+        }
+
+        .date {
+            font-weight: 500;
+            color: #555;
+            white-space: nowrap;
+            font-size: 9pt;
+        }
+
+        ul {
+            margin-left: 18px;
+            margin-top: 4px;
+        }
+
+        li {
+            margin-bottom: 3px;
+            text-align: justify;
+            line-height: 1.4;
+        }
+
+        li strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .education {
+            margin-bottom: 6px;
+        }
+
+        .degree {
+            font-weight: 700;
+            font-size: 10pt;
+            color: #1a1a1a;
+        }
+
+        .institution {
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .thesis {
+            margin-left: 18px;
+            margin-top: 3px;
+            font-size: 9pt;
+        }
+
+        .thesis strong {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .thesis a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e5e7eb;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            a {
+                color: inherit;
+            }
+
+            .section-title {
+                border-bottom-color: #333;
+            }
+
+            .core-stack {
+                background: #f5f5f5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Dummy theme toggle added so app.js can safely find elements on resume.html -->
+    <div id="themeToggle" aria-hidden="true" title="Theme toggle (dummy)">
+        <!-- sun icon -->
+        <svg id="sunIcon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6.76 4.84l-1.8-1.79L3.17 4.84 4.98 6.64 6.76 4.84zM1 13h3v-2H1v2zm10-9h2V1h-2v3zm7.24 1.84l1.79-1.79-1.79-1.79-1.79 1.79 1.79 1.79zM17 11v2h3v-2h-3zM12 6a6 6 0 100 12 6 6 0 000-12zM6.76 19.16l-1.79 1.79 1.79 1.79 1.79-1.79-1.79-1.79zM11 23h2v-3h-2v3zm7.24-4.84l1.79 1.79 1.79-1.79-1.79-1.79-1.79 1.79z" />
+        </svg>
+        <!-- moon icon (hidden by default) -->
+        <svg id="moonIcon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="display:none"
+            aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+    </div>
+
+    <h1 id="name"></h1>
+    <div class="title" id="title"></div>
+    <div class="contact" id="contact"></div>
+
+    <hr>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="summary" id="summary"></div>
+    </div>
+
+    <div class="core-stack">
+        <div class="core-stack-label">Core Stack:</div>
+        <div id="coreStack"></div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid" id="skills"></div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        <div id="experience"></div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div id="education"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const data = profileData;
+
+            // Header
+            document.getElementById('name').textContent = data.name;
+            document.getElementById('title').textContent = data.title;
+
+            // Contact
+            const contactHTML = `
+                ${data.contact.phone} | 
+                <a href="mailto:${data.contact.email}">${data.contact.email}</a> | 
+                <a href="${data.contact.linkedin}">${data.contact.linkedin.replace('https://', '')}</a> | 
+                Mumbai, India
+            `;
+            document.getElementById('contact').innerHTML = contactHTML;
+
+            // Dynamic Experience Calculation to ensure 'Summary' is up to date
+            // The logic in app.js inside loadProfileData() updates profileData.summary in place? 
+            // In app.js: data.summary = data.summary.replace(...)
+            // However, that function is async and called via window.onload??
+            // Looking at app.js, loadProfileData is async. 
+            // We should use the same logic here or ensure it runs.
+            // Simplified: Re-run calculation here.
+
+            function calculateTotalExperience(experience) {
+                if (!experience || experience.length === 0) return 0;
+                let earliestStart = new Date();
+                function parseDate(dateStr) {
+                    if (!dateStr || dateStr.toLowerCase() === 'present') return new Date();
+                    const [month, year] = dateStr.split(' ');
+                    const monthIndex = new Date(Date.parse(month + " 1, 2000")).getMonth();
+                    return new Date(parseInt(year), monthIndex);
+                }
+                experience.forEach(exp => {
+                    const dates = exp.date.split(' - ');
+                    const startDate = parseDate(dates[0]);
+                    if (startDate < earliestStart) earliestStart = startDate;
+                });
+                const now = new Date();
+                const diffTime = Math.abs(now - earliestStart);
+                return (diffTime / (1000 * 60 * 60 * 24 * 365.25)).toFixed(1);
+            }
+
+            const years = calculateTotalExperience(data.experience);
+            // Replace any existing placeholder or previous valid value if possible
+            // The source data in app.js has "7.5+ years"
+            let summaryText = data.summary.replace(/\d+(\.\d+)?\+? years/i, `${years}+ years`);
+            document.getElementById('summary').innerHTML = summaryText;
+
+            // Core Stack
+            // Accessing the newly added coreStack property
+            if (data.coreStack) {
+                document.getElementById('coreStack').textContent = data.coreStack;
+            } else {
+                document.querySelector('.core-stack').style.display = 'none';
+            }
+
+            // Skills
+            const skillsHTML = data.skills.map(cat => `
+                <div class="skill-label">${cat.category}:</div>
+                <div class="skill-value">${cat.items.join(', ')}</div>
+            `).join('');
+            document.getElementById('skills').innerHTML = skillsHTML;
+
+            // Experience
+            const experienceHTML = data.experience.map(exp => {
+                // Formatting descriptions to bold numbers and key metrics
+                const formattedDesc = exp.description.map(desc => {
+                    // Start of rudimentary bolding logic for metrics (e.g., 50%)
+                    return `<li>${desc.replace(/(\b\d+(\.\d+)?([KMB]\+?|%)?)/g, '<strong>$1</strong>')}</li>`;
+                }).join('');
+
+                return `
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">${exp.title}</span> | 
+                            <span class="company">${exp.company}</span>
+                            ${exp.location ? `, <span class="location">${exp.location}</span>` : ''}
+                        </div>
+                        <div class="date">${exp.date}</div>
+                    </div>
+                    <ul>${formattedDesc}</ul>
+                </div>
+            `}).join('');
+            document.getElementById('experience').innerHTML = experienceHTML;
+
+            // Education
+            const educationHTML = data.education.map(edu => {
+                let details = edu.details;
+                // Highlight GPA
+                if (details.includes('GPA:')) {
+                    details = details.replace(/GPA: \d+(\.\d+)?\/\d+\.\d+/, match => `<span class="highlight">${match}</span>`);
+                }
+
+                return `
+                <div class="education">
+                    <div style="display:flex; justify-content:space-between;">
+                        <span class="degree">${edu.degree}</span>
+                         <span class="highlight" style="display:none">GPA: ...</span> <!-- hidden -->
+                    </div>
+                    <div class="institution">${edu.institution}</div>
+                    <div style="color: #666; font-size: 9pt; margin-top: 2px;">${edu.date}</div>
+                    <div style="margin-top:2px;">${details}</div>
+                    ${edu.thesisLink ? `<div class="thesis"><strong>Thesis:</strong> <a href="${edu.thesisLink}" target="_blank">View Thesis</a></div>` : ''}
+                </div>
+            `}).join('');
+            document.getElementById('education').innerHTML = educationHTML;
+        });
+    </script>
+</body>
+
+</html>

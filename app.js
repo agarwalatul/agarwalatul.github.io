@@ -45,6 +45,8 @@ const profileData = {
         linkedin: "https://linkedin.com/in/agarwalat"
     },
     summary: "Quantitative Technologist / Data Engineer with 7.5+ years building high-performance trading data systems and scalable ML platforms. Designed and operated real-time ingestion + distributed compute pipelines handling 1TB+ daily and 2M+ Kafka events, while improving efficiency and reducing infrastructure costs by 50%. Deep expertise in execution-critical backend infrastructure, resilient data architectures, and production-grade distributed systems. Strong foundation with an M.Tech (Computer Science) and hands-on delivery across Python, Rust, Kafka, distributed databases, and cloud.",
+    // Used while printing or exporting to PDF - we can dynamically inject the experience years here as well
+    coreStack: "Python, Rust, SQL, Kafka, Airflow/Argo, Postgres/ClickHouse/CockroachDB, AWS, Docker, gRPC/Protobuf",
     experience: [
         {
             title: "Quantitative Technologist",
@@ -172,6 +174,7 @@ function calculateTotalExperience(experience) {
 
     return diffYears.toFixed(1); // Return with 1 decimal place (e.g., "7.5")
 }
+
 
 // Function to populate the page with data
 // This function can be easily modified to fetch data from a Rust backend API
@@ -346,7 +349,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Print/Export functionality (bonus feature)
 function exportToPDF() {
-    window.print();
+    // Open resume.html in a new window and print it
+    const win = window.open('resume.html', '_blank');
+    if (!win) {
+        // popup blocked — fall back to printing current page
+        window.print();
+        return;
+    }
+    win.addEventListener('load', () => {
+        try {
+            win.focus();
+            win.print();
+            // optionally close after printing
+            // win.close();
+        } catch (e) {
+            console.error('Print failed:', e);
+        }
+    });
 }
 
 // Add keyboard shortcut for print (Ctrl/Cmd + P)
