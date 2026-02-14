@@ -28,7 +28,7 @@ This project is designed to be easily reused by others! If you like this profile
 
 *Note: You can also mark this repository as a template in its GitHub settings to enable the "Use this template" button.*
 
-The guide covers everything from forking and renaming to customizing your data and setting up automated deployments.
+The guide covers everything from forking and renaming to customizing your data and setting up automated deployments. Once you've customized the files, simply **commit and push** your changes to the `master` branch. GitHub Actions will automatically deploy the updates, and your profile will be live at `https://[your-username].github.io`.
 
 ## License
 

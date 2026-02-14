@@ -52,4 +52,4 @@ Modify the CSS variables at the top of `styles.css` to change the color scheme o
 
 ## Publishing Your Changes
 
-Once you've customized the files, simply **commit and push** your changes to the `main` branch. GitHub Actions will automatically deploy the updates, and your profile will be live at `https://[your-username].github.io`.
+Once you've customized the files, simply **commit and push** your changes to the `master` branch. GitHub Actions will automatically deploy the updates, and your profile will be live at `https://[your-username].github.io`.
