@@ -175,11 +175,6 @@ function calculateTotalExperience(experience) {
     return diffYears.toFixed(1); // Return with 1 decimal place (e.g., "7.5")
 }
 
-// Helper: safely set image src only if element exists
-function safeSetSrc(id, src) {
-    const el = document.getElementById(id);
-    if (el) el.src = src;
-}
 
 // Function to populate the page with data
 // This function can be easily modified to fetch data from a Rust backend API
@@ -212,8 +207,7 @@ async function loadProfileData() {
         // Populate header
         document.getElementById('name').textContent = data.name;
         document.getElementById('title').textContent = data.title;
-        // safe set in case resume.html does not include the profile image element
-        safeSetSrc('profilePic', data.image);
+        document.getElementById('profileImage').src = data.profileImage;
 
         // Populate contact info
         const emailLink = document.getElementById('email');
