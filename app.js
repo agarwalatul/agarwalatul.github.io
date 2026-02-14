@@ -96,11 +96,11 @@ const profileData = {
         },
         {
             category: "Databases",
-            items: ["PostgreSQL", "ClickHouse"]
+            items: ["PostgreSQL", "ClickHouse", "Redis", "CockroachDB", "MongoDB"]
         },
         {
             category: "Data Systems",
-            items: ["PyArrow", "Arrow Flight"]
+            items: ["PyArrow", "Pandas", "NumPy", "PySpark"]
         },
         {
             category: "Backend / RPC",
@@ -281,7 +281,7 @@ async function loadProfileData() {
                 </div>
                 <div class="item-description">
                     <p>${edu.details}</p>
-                    ${edu.thesisLink ? `<p><a href="${edu.thesisLink}" target="_blank" class="thesis-link">View Thesis Code</a></p>` : ''}
+                    ${edu.thesisLink ? `<p><a href="${edu.thesisLink}" target="_blank" class="thesis-link">View Thesis</a></p>` : ''}
                 </div>
             </div>
         `).join('');
