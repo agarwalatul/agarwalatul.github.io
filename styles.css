@@ -548,3 +548,31 @@ body::before {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-pink);
 }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+  border-top: 1px solid var(--card-border);
+  color: var(--text-secondary);
+}
+
+.template-link {
+  color: var(--accent-purple);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  border-bottom: 1px solid transparent;
+}
+
+.template-link:hover {
+  color: var(--accent-pink);
+  border-bottom-color: var(--accent-pink);
+}
+
+@media print {
+  .theme-toggle, .footer {
+    display: none;
+  }
+}
